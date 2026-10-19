@@ -1,0 +1,57 @@
+<Window x:Class="WpfNavigationLab.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Súgó"
+        Height="400"
+        Width="480"
+        WindowStartupLocation="CenterOwner"
+        Background="#F8FAFC">
+
+    <Grid Margin="30">
+
+        <StackPanel>
+
+            <TextBlock Text="Súgó"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="#1E293B"/>
+
+            <TextBlock Text="Ez az ablak ShowDialog() segítségével nyílik meg, ezért a főablak a bezárásáig nem használható."
+                       TextWrapping="Wrap"
+                       Foreground="#64748B"
+                       Margin="0,10,0,20"/>
+
+            <Border Background="White"
+                    CornerRadius="10"
+                    Padding="15"
+                    Margin="0,0,0,20">
+
+                <StackPanel>
+
+                    <TextBlock Text="Tippek" FontWeight="Bold" Margin="0,0,0,5"/>
+
+                    <TextBlock Text="• A Page-ek a jobb oldali Frame-ben jelennek meg."
+                               TextWrapping="Wrap"/>
+
+                    <TextBlock Text="• A Show() nem blokkolja a főablakot."
+                               TextWrapping="Wrap"/>
+
+                    <TextBlock Text="• A ShowDialog() bezárásig blokkolja a főablakot."
+                               TextWrapping="Wrap"/>
+
+                    <TextBlock Text="• A Vissza gomb a NavigationService.GoBack() metódust használja."
+                               TextWrapping="Wrap"/>
+
+                </StackPanel>
+
+            </Border>
+
+            <Button Content="Bezárás"
+                    Height="45"
+                    Click="Close_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>

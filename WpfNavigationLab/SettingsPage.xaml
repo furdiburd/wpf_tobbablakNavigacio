@@ -1,0 +1,57 @@
+<Page x:Class="WpfNavigationLab.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#F8FAFC">
+
+    <Grid Margin="40">
+
+        <StackPanel>
+
+            <TextBlock Text="Beállítások"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Foreground="#1E293B"/>
+
+            <TextBlock Text="Harmadik Page a Frame-ben."
+                       FontSize="16"
+                       Foreground="#64748B"
+                       Margin="0,10,0,25"/>
+
+            <Border Background="White"
+                    CornerRadius="15"
+                    Padding="25">
+
+                <StackPanel>
+
+                    <TextBlock Text="Beállítások"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               Margin="0,0,0,15"/>
+
+                    <CheckBox x:Name="chkNotifications"
+                              Content="Értesítések engedélyezése"
+                              FontSize="16"/>
+
+                    <CheckBox x:Name="chkDarkMode"
+                              Content="Sötét mód használata"
+                              FontSize="16"
+                              Margin="0,10,0,20"/>
+
+                    <Button Content="Beállítások mentése"
+                            Height="45"
+                            Margin="0,0,0,10"
+                            Click="Save_Click"/>
+
+                    <Button Content="Vissza"
+                            Height="45"
+                            Click="Back_Click"/>
+
+                </StackPanel>
+
+            </Border>
+
+        </StackPanel>
+
+    </Grid>
+
+</Page>
